@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,7 +28,11 @@
         <ol>
             <li>Delivery date filter for an application, that cannot select previous date past today's date.</li>
             <!--ANWER HERE-->
-
+            <form action="submit.php" method="post">
+                <label for="Date">Delivery Date</label>
+                <input type ="Date" name="Date" id="Date" min="2023-09-23">
+                <input type="submit" value="submit">
+            </form>
             <!--END ANWER HERE-->
 
             <li>An input field used to select ONE item from the Southeast Asian nations, with Philippines as initially selected record: (follow the order of nations below)</li>
@@ -46,7 +50,22 @@
                         <li>Vietname</li>
                     </ul>
             <!--ANWER HERE--> 
-            
+            <form action="submit.php" method="post">
+                <select id="country" name="country">
+                    <option name="Country" id="burma" value="burma">Burma</option>
+                    <option name="Country" id="burnei" value="burnei">Brunei</option>
+                    <option name="cambodia" id="cambodia" value="cambodia">Cambodia</option>
+                    <option name="Country" id="indonesia" value="indonesia">Indonesia</option>
+                    <option name="laos" id="laos" value="laos">Laos</option>
+                    <option name="Country" id="malaysia" value="malaysia">Malaysia</option>
+                    <option name="Country" id="philippines" value="philippines" selected>Philippines</option>
+                    <option name="Country" id="singapore" value="singapore">Singapore</option>
+                    <option name="Country" id="thailand" value="thailand">Thailand</option>
+                    <option name="Country" id="timor-leste" value="timor-leste">Timor-Leste</option>
+                    <option name="Country" id="vietnam" value="vietnam">vietnam</option>
+                </select>
+                <input type="submit" value="submit">
+            </form>
             <!--END ANWER HERE-->
 
             <li>An input field for ingredients that can select one or more from the list:</li>
@@ -59,17 +78,45 @@
                     <li>Onion</li>
                 </ul>
             <!--ANWER HERE--> 
-            
+            <form action="submit.php" method="post">
+                <input type="checkbox" name="ingredient" id="ingredient" value="Fresh Celery">
+                <label for="FC">Fresh Celery</label><br>
+                <input type="checkbox" name="ingredient" id="ingredient" value="Skim Milk">
+                <label for="FC">Skim Milk</label><br>
+                <input type="checkbox" name="ingredient" id="ingredient" value="Turkey Celery">
+                <label for="FC">Turkey Celery</label><br>
+                <input type="checkbox" name="ingredient" id="ingredient" value="Butter">
+                <label for="FC">Butter</label><br>
+                <input type="checkbox" name="ingredient" id="ingredient" value="Carrots">
+                <label for="FC">Carrots</label><br>
+                <input type="checkbox" name="ingredient" id="ingredient" value="Onion">
+                <label for="FC">Onion</label><br>
+                
+                <input type="submit" valute="submit">
+            </form>
             <!--END ANWER HERE--> 
 
             <li>An input field to select whether a user is an administrator or not? (Boolean)</li>    
             <!--ANWER HERE--> 
-            
+            <form action="submit.php" method="post">
+                <label for="admin">Are you an Admin?</label><br>
+                <input type="radio" id="admin" name="admin" value="Administrator">
+                <label for="yes">YES</label>
+                <input type="radio" id="admin" name="admin" value="Not Admin">
+                <label for="no">NO</label>
+                <br>
+                <input type="submit" value="submit">
+            </form>
             <!--END ANWER HERE-->  
 
             <li>An input field to upload one or more audio related files(like mp3, wav, ogg, m4a)</li>
             <!--ANWER HERE--> 
-            
+            <form action="submit.php" method="'post">
+                <label for="audio-upload" class="file-label">Choose audio files</label>
+                <input type="file" id="audio-upload" name="audio" accept=".mp3, .wav, .ogg, .m4a" multiple>
+                <br>
+                <input type="submit" value="submit">
+            </form>
             <!--END ANWER HERE-->    
                 
 
